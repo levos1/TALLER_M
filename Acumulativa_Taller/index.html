@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>APUNTES</title>
+  <link rel="stylesheet" href="CSS/index.css" type="text/css" />
+  <script src="https://kit.fontawesome.com/84f8d5f06c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+<section class="hero-section">
+  <div id="menu" style=" padding-right: 70px;">
+    <ul class="menu">
+      <li title="HOME"><a rehf="../index.html" class="home">home</a></li>
+      <li title="SEARCH"><a href="#" class="search">search</a></li>
+      <li title="TEXTOS"><a href="Pages/textos.html" class="textos">textos</a></li>
+      <li title="PERFIl"><a href="#" class="perfil">perfil</a></li>
+      <li title="IMAGENES"><a href="Pages/imagenes.html" class="imagenes">imagenes</a></li>
+      <li title="VIDEOS"><a href="Pages/videos.html" class="videos">videos</a></li>
+    </ul>
+  </div>
+  <div class="card-grid">
+    <a class="card" href="Pages/textos.html">
+      <div class="card__background" style="background-image: url(RESOURCES/IMG/TEXTO2.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category"></p>
+        <h3 class="card__heading">Apunte_01</h3>
+      </div>
+    </a>
+    <a class="card" href="Pages/formulario.html">
+      <div class="card__background" style="background-image: url(RESOURCES/IMG/NUEVO_APUNTE3.png)"></div>
+      <div class="card__content">
+        <p class="card__category"></p>
+        <h3 class="card__heading">NUEVO APUNTE</h3>
+      </div>
+    </a>
+    <div >
+      <form id="NuevoApunte" method="POST" enctype="multipart/form-data" style="background-color:rgb(54, 124, 148); z-index:+1; position: absolute;top: 15%;border: solid;
+  left: 65%;" >
+    <h3 style="text-align: center;">Nuevo Apunte</h3>
+    <label for="nombre" >NOMBRE:</label>
+    <input type="text" name="nombre"><hr>
+    <label for="URL"style="margin-left:36px" >URL:</label>
+    <input type="url" name="URL" ></input ><hr>
+    <input type="submit" name="crearApunte" value="CREAR APUNTE" style="margin-left: 35%;"disabled> 
+    
+  </form>   
+    </div>
+  <div>
+</section>
+<!-- partial -->
+  
+</body>
+</html>
