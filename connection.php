@@ -1,14 +1,14 @@
 <?php
 /*
 $hn= 'localhost';
-$db ='apuntes';
+$db ='apuntesv2';
 $un ='root';
 $pw ='joaquin12';
 */
 $servername = "localhost";
 $username = "root";
 $password = "joaquin12";
-$dbname = "apuntes";
+$dbname = "apuntesv2";
 
 if(!$con = new mysqli($servername, $username, $password, $dbname))
 {

@@ -98,7 +98,7 @@ session_start();
 
 
     $query = "SELECT c.id, c.nombre, c.descripcion FROM contenido  as c
-              INNER JOIN user as u ON c.user_id= u.user_id where u.user_id =$user_id "; // editar bases de datos
+              INNER JOIN usuario as u ON c.user_id= u.user_id where u.user_id =$user_id "; // cambiar user por usuario
     $result = $con->query($query);
 
   

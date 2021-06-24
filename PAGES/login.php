@@ -12,7 +12,7 @@
 		{
 
 			//lleer desde la base de datos
-			$query = "select * from user where user_name = '$user_name' limit 1"; // cambiar nombre base de datos
+			$query = "select * from usuario where user_name = '$user_name' limit 1"; // cambiar nombre tabla user por usuario
 			$result = mysqli_query($con, $query);
 
 			if($result)
