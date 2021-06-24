@@ -8,7 +8,7 @@ $pw ='joaquin12';
 $servername = "localhost";
 $username = "root";
 $password = "joaquin12";
-$dbname = "apuntesv2";
+$dbname = "apuntesV2";
 
 if(!$con = new mysqli($servername, $username, $password, $dbname))
 {

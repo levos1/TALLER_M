@@ -12,9 +12,8 @@
 		{
 
 			//lleer desde la base de datos
-			$query = "select * from usuario where user_name = '$user_name' limit 1"; // cambiar nombre tabla user por usuario
-			$result = mysqli_query($con, $query);
-
+			$query = "select * from usuario where user_name = '$user_name' limit 1"; // 
+			$result = mysqli_query($con, $query) or die(mysqli_error($con));
 			if($result)
 			{
 				if($result && mysqli_num_rows($result) > 0)
@@ -24,7 +23,7 @@
 					
 					if($user_data['password'] === $password)
 					{
-
+						
 						$_SESSION['user_id'] = $user_data['user_id'];
 						//$_SESSION['apunte_id'] = $user_data['apunte_id'];
 						header("Location: ../index.php");
